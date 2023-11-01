@@ -1,3 +1,4 @@
+## ZenMind Hexo Theme
 ZenMind 是一款 [Hexo](https://hexo.io/) 简洁单栏主题。其名来源于中文「静思」，寓意深入思考与宁静的心境。
 这款主题旨在为读者和作者提供一个简洁、宁静的阅读与写作环境。
 
@@ -40,7 +41,8 @@ prismjs:
 ## 更换 favicon
 
 请同命名覆盖替换 `source/img/favicon.ico` 文件；
-如你需要使用 `.png` 格式，可在 `layout/_partial/head.ejs` Favicon 处修改；
+
+如你需要使用 `.png` 格式，可在 `layout/_partial/head.ejs` Favicon 处修改。
 
 ## 更换 apple-touch-icon
 请同命名覆盖替换 `source/img/apple-touch-icon.png` 图片。
