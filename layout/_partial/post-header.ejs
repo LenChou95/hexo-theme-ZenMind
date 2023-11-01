@@ -1,0 +1,12 @@
+<div class="post-header">
+    <a class="logo" href="<%- url_for() %>"><%= config.title %></a>
+    <!-- <div class="logo"><a href="/" title="Len"><img src="/img/logo.svg" alt="Len" aria-label="logo" height="20"></a></div> -->
+        <ul class="nav">
+            <% for (name in theme.menu) { %>
+            <li><a href="<%- url_for(theme.menu[name]) %>"><%= name %></a></li>
+            <% } %>
+        </ul>
+
+
+    </a>
+</div>

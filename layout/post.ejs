@@ -1,0 +1,35 @@
+<div class="post-main">
+    <% if (is_post()) { %>
+        <div class="post-main-title">
+            <%= page.title %>
+        </div>
+        <div class="post-meta">
+            <%- date(page.date, "YYYY-MM-DD") %> ｜ 
+            <% page.categories.forEach(function(category) { %>
+                <a href="<%= url_for(category.path) %>"># <%= category.name %></a>
+            <% }); %>
+        </div>
+        <!-- 圆角分类 -->
+        <!-- <div class="tags"> -->
+            <!-- <% page.categories.forEach(function(category) { %> -->
+                <!-- <a href="<%= url_for(category.path) %>"><%= category.name %></a> -->
+            <!-- <% }); %> -->
+        <!-- </div> -->
+        <div class="post-md">
+            <%- page.content %>
+        </div>
+    <% } else { %>
+        <div class="post-md">
+            <%- page.content %>
+        </div>
+    <% } %>
+<!-- tags -->
+<% if (page.tags && page.tags.length > 0) { %>
+    <div class="post-meta">
+        标签：
+        <% page.tags.forEach(function(tags) { %>
+            <a href="<%= url_for(tags.path) %>"> / <%= tags.name %></a>
+        <% }); %>
+    </div>
+<% } %>
+</div>
