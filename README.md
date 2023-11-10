@@ -6,7 +6,7 @@ ZenMind 是一款 [Hexo](https://hexo.io/) 简洁单栏主题。其名来源于�
 
 ## Live Demo
 
-可直接通过我的博客预览：[https://imzl.com](https://imzl.com)
+预览：[https://imzl.com/zenmind](https://imzl.com/zenmind)
 
 ![ZenMind 预览图](/source/img/screenshot.png)
 
